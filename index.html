@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre el Dengue</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; 
+        }
+
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            animation: headerBlink 1s infinite; 
+        }
+
+        @keyframes headerBlink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            animation: fadeIn 2s ease-in-out; 
+        }
+
+        
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        h2 {
+            color: #1e90ff;
+            font-size: 1.8em;
+            text-align: center;
+            animation: slideIn 3s ease-out; 
+        }
+
+        
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .info-box {
+            border: 2px solid #1e90ff;
+            padding: 10px;
+            background-color: #f0f8ff;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out; 
+        }
+
+        .warning {
+            color: red;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .colored-text {
+            color: #ff6347;
+            font-weight: bold;
+        }
+
+       
+        .blink-image {
+            animation: blinkImage 1.5s infinite;
+        }
+
+        @keyframes blinkImage {
+            0% { opacity: 1; }
+            50% { opacity: 0.2; }
+            100% { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                width: 100%;
+            }
+        }
+    </style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('OIP.jfif')">
+    <header>
+        <h1>Información sñobre el Dengue</h1>
+    </header>
+
+    <div class="content">
+        <div class="section">
+            <h2>Causas y Transmisión</h2>
+            <p>El <span class="highlight">dengue</span> es causado por el virus del dengue, transmitido por mosquitos del género <strong>Aedes</strong>, principalmente <em>Aedes aegypti</em>. La transmisión ocurre cuando un mosquito infectado pica a una persona.</p>
+            <p>El virus tiene <strong>cuatro serotipos</strong>, y una persona puede infectarse varias veces, siendo más riesgoso después de la segunda infección.</p>
+             <marquee> 
+             <a href="https://sl.bing.net/heuBHpdGoOi"><img src="virusdeng.jfif" alt="Virus del Dengue"></a>
+             </marquee> 
+				</div> 
+        <div class="section">
+            <h2>Síntomas</h2>
+            <p>Los síntomas del dengue suelen aparecer entre 4 a 10 días después de la picadura y pueden incluir:</p>
+            <ul>
+                <li><span class="colored-text">Fiebre alta repentina</span></li>
+                <li>Dolores intensos en la cabeza y detrás de los ojos</li>
+                <li>Dolores musculares y articulares</li>
+                <li>Náuseas y vómitos</li>
+                <li>Erupciones en la piel</li>
+            </ul>
+          <div class="info-box">
+            <p class="warning">En casos graves, el dengue puede evolucionar hacia un <strong>dengue hemorrágico</strong> o <strong>dengue grave</strong>, con riesgo de shock y daños a órganos.</p>
+              <p class="warning"><a href="555.jpg" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','44444.jfif',1)"><img src="sintoma1.jfif" alt="" width="440" height="440" id="Image4"></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="section">
+            <h2>Prevención</h2>
+            <p>Para prevenir el dengue, es importante evitar la proliferación de mosquitos:</p>
+            <ul>
+                <li>Eliminar criaderos de mosquitos, como agua estancada en recipientes.</li>
+                <li>Usar repelentes y ropa protectora.</li>
+                <li>Instalar mosquiteros en camas y ventanas.</li>
+            </ul>
+<marquee> 
+<a href="https://sl.bing.net/kRvjARWaVWe"><img src="prevencion.jpg" alt="Prevención del Dengue" width="300" height="302"></a>
+</marquee>
+        </div>
+
+      <div class="section">
+            <h2>Tratamiento</h2>
+        <p>No existe un tratamiento antiviral específico para el dengue. El tratamiento se centra en aliviar los síntomas:</p>
+          <ul>
+              <li>Uso de paracetamol para controlar el dolor y la fiebre.</li>
+              <li>Hidratación adecuada.</li>
+            <li>Observación médica en casos graves.</li>
+            <h2></h2>
+		    <a href="Tratamiento-complementario-del-dengue.webp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','OIP.jfif',1)"><img src="R.jfif" alt="" width="500" height="333" id="Image3"></a>
+          </ul>
+        </div>
+    </div>
+
+    <footer>informacion sobre el dengue&nbsp;
+        
+    </footer>
+</body>
+</html>
